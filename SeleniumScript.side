@@ -1,0 +1,290 @@
+{
+  "id": "54ea96c6-5d2b-4498-8d03-244f4c535cc4",
+  "version": "1.1",
+  "name": "CS498Project",
+  "url": "http://store.demoqa.com",
+  "tests": [{
+    "id": "abd41834-04e6-46d3-81e3-41c6ed47dc3b",
+    "name": "Test1",
+    "commands": [{
+      "id": "11b0e9a8-6727-4f4d-af6d-a028eb4c2749",
+      "comment": "open store.demoqa.com",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "aca5e8dc-6a30-47ef-b6af-ab31a2df13eb",
+      "comment": "maximize window",
+      "command": "setWindowSize",
+      "target": "1720x934",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a89d25df-7e2a-42d8-8dd2-f602de4ca382",
+      "comment": "Click on All Product tab",
+      "command": "click",
+      "target": "linkText=All Product",
+      "targets": [
+        ["linkText=All Product", "linkText"],
+        ["css=#menu-item-72 > a", "css"],
+        ["css=#menu-item-72 > a", "css:finder"],
+        ["xpath=//a[contains(text(),'All Product')]", "xpath:link"],
+        ["xpath=//li[@id='menu-item-72']/a", "xpath:idRelative"],
+        ["xpath=(//a[@href='http://store.demoqa.com/products-page/product-category/'])[2]", "xpath:href"],
+        ["xpath=//nav/ul/li[4]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "87658a01-a78e-4c97-9f5d-ef3a64c55fe7",
+      "comment": "Switch to grid view",
+      "command": "click",
+      "target": "linkText=Grid",
+      "targets": [
+        ["linkText=Grid", "linkText"],
+        ["css=a.grid.active", "css"],
+        ["css=.grid", "css:finder"],
+        ["xpath=//a[contains(text(),'Grid')]", "xpath:link"],
+        ["xpath=//div[@id='grid_view_products_page_container']/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/products-page/product-category/?view_type=grid')]", "xpath:href"],
+        ["xpath=//div/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "75d058ab-1b64-4371-95ad-4b96431f63e8",
+      "comment": "Add iPhone 5 to cart",
+      "command": "click",
+      "target": "name=Buy",
+      "targets": [
+        ["name=Buy", "name"],
+        ["css=input[name=\"Buy\"]", "css"],
+        ["css=.product_view_32 .wpsc_buy_button", "css:finder"],
+        ["xpath=//input[@name='Buy']", "xpath:attributes"],
+        ["xpath=//div[@id='grid_view_products_page_container']/div[3]/div/div[3]/form/div/div/span/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "efd256eb-abe1-4764-b8cc-fd93589812ee",
+      "comment": "Add Magic Mouse to cart",
+      "command": "click",
+      "target": "css=form[name=\"product_40\"] > div.wpsc_buy_button_container.group > div.input-button-buy > span > input[name=\"Buy\"]",
+      "targets": [
+        ["css=form[name=\"product_40\"] > div.wpsc_buy_button_container.group > div.input-button-buy > span > input[name=\"Buy\"]", "css"],
+        ["css=.product_view_40 .wpsc_buy_button", "css:finder"],
+        ["xpath=(//input[@name='Buy'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='grid_view_products_page_container']/div[3]/div[2]/div[3]/form/div/div/span/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[3]/form/div/div/span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2c559ea8-3534-469b-8528-58061482eb8b",
+      "comment": "Mouse over product category",
+      "command": "mouseOver",
+      "target": "linkText=Product Category",
+      "targets": [
+        ["linkText=Product Category", "linkText"],
+        ["css=#menu-item-33 > a", "css"],
+        ["css=#menu-item-33 > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Product Category')]", "xpath:link"],
+        ["xpath=//li[@id='menu-item-33']/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://store.demoqa.com/products-page/product-category/']", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "50229c64-d98c-4b47-b2c9-e27b17485ec3",
+      "comment": "Click iPads subcategory",
+      "command": "click",
+      "target": "linkText=iPads",
+      "targets": [
+        ["linkText=iPads", "linkText"],
+        ["css=#menu-item-36 > a", "css"],
+        ["css=#menu-item-36 > a", "css:finder"],
+        ["xpath=//a[contains(text(),'iPads')]", "xpath:link"],
+        ["xpath=//li[@id='menu-item-36']/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://store.demoqa.com/products-page/product-category/ipads/']", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5977c98a-6c11-4b68-a142-0a23d42c69ee",
+      "comment": "Add iPad 2 16gb to cart",
+      "command": "click",
+      "target": "css=form[name=\"product_93\"] > div.wpsc_buy_button_container.group > div.input-button-buy > span > input[name=\"Buy\"]",
+      "targets": [
+        ["css=form[name=\"product_93\"] > div.wpsc_buy_button_container.group > div.input-button-buy > span > input[name=\"Buy\"]", "css"],
+        ["css=.product_view_93 .wpsc_buy_button", "css:finder"],
+        ["xpath=(//input[@name='Buy'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='grid_view_products_page_container']/div[3]/div[2]/div[3]/form/div/div/span/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[3]/form/div/div/span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cd996e94-0354-450e-9b0f-ace50350ad0a",
+      "comment": "Mouse over Product Category",
+      "command": "mouseOver",
+      "target": "linkText=Product Category",
+      "targets": [
+        ["linkText=Product Category", "linkText"],
+        ["css=#menu-item-33 > a", "css"],
+        ["css=#menu-item-33 > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Product Category')]", "xpath:link"],
+        ["xpath=//li[@id='menu-item-33']/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://store.demoqa.com/products-page/product-category/']", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e69b0651-74a1-4920-9aeb-950d9560c456",
+      "comment": "Click on iPod subcategory",
+      "command": "click",
+      "target": "linkText=iPods",
+      "targets": [
+        ["linkText=iPods", "linkText"],
+        ["css=#menu-item-38 > a", "css"],
+        ["css=#menu-item-38 > a", "css:finder"],
+        ["xpath=//a[contains(text(),'iPods')]", "xpath:link"],
+        ["xpath=//li[@id='menu-item-38']/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://store.demoqa.com/products-page/product-category/ipods/']", "xpath:href"],
+        ["xpath=//li[5]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fc88fd48-db61-4797-8ceb-f3fd2f7a5ea1",
+      "comment": "Add iPod Large to cart",
+      "command": "click",
+      "target": "css=form[name=\"product_102\"] > div.wpsc_buy_button_container.group > div.input-button-buy > span > input[name=\"Buy\"]",
+      "targets": [
+        ["css=form[name=\"product_102\"] > div.wpsc_buy_button_container.group > div.input-button-buy > span > input[name=\"Buy\"]", "css"],
+        ["css=.product_view_102 .wpsc_buy_button", "css:finder"],
+        ["xpath=(//input[@name='Buy'])[3]", "xpath:attributes"],
+        ["xpath=//div[@id='grid_view_products_page_container']/div[3]/div[3]/div[3]/form/div/div/span/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div[3]/form/div/div/span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "664d807e-db3a-4557-a796-a0aa6f4d9db0",
+      "comment": "Click on cart to see there are 4 items",
+      "command": "click",
+      "target": "css=a.cart_icon",
+      "targets": [
+        ["css=a.cart_icon", "css"],
+        ["css=.cart_icon", "css:finder"],
+        ["xpath=//div[@id='header_cart']/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://store.demoqa.com/products-page/checkout/']", "xpath:href"],
+        ["xpath=//div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "de6a3b65-9416-41a7-b34b-66f5a7e61b13",
+      "comment": "Navigate back home",
+      "command": "click",
+      "target": "linkText=Home",
+      "targets": [
+        ["linkText=Home", "linkText"],
+        ["css=#menu-item-15 > a", "css"],
+        ["css=#menu-item-15 > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Home')]", "xpath:link"],
+        ["xpath=//li[@id='menu-item-15']/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://store.demoqa.com/']", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c1d3706b-5625-4230-b153-15d5dc307ab0",
+      "comment": "Go back to cart",
+      "command": "click",
+      "target": "css=a.cart_icon",
+      "targets": [
+        ["css=a.cart_icon", "css"],
+        ["css=.cart_icon", "css:finder"],
+        ["xpath=//div[@id='header_cart']/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://store.demoqa.com/products-page/checkout/']", "xpath:href"],
+        ["xpath=//div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3831c82b-e04c-40e9-b673-9e30a8c2cabd",
+      "comment": "Remove iPhone 5 from cart",
+      "command": "click",
+      "target": "css=form.adjustform.remove > input[name=\"submit\"]",
+      "targets": [
+        ["css=form.adjustform.remove > input[name=\"submit\"]", "css"],
+        ["css=.wpsc_product_remove_0 input:nth-child(4)", "css:finder"],
+        ["xpath=(//input[@name='submit'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='checkout_page_container']/div/table/tbody/tr[2]/td[6]/form/input[4]", "xpath:idRelative"],
+        ["xpath=//td[6]/form/input[4]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "24b76d70-85b0-493b-b519-cefee9e9078f",
+      "comment": "Remove Magic Mouse from cart",
+      "command": "click",
+      "target": "css=form.adjustform.remove > input[name=\"submit\"]",
+      "targets": [
+        ["css=form.adjustform.remove > input[name=\"submit\"]", "css"],
+        ["css=.wpsc_product_remove_0 input:nth-child(4)", "css:finder"],
+        ["xpath=(//input[@name='submit'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='checkout_page_container']/div/table/tbody/tr[2]/td[6]/form/input[4]", "xpath:idRelative"],
+        ["xpath=//td[6]/form/input[4]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "43964230-c700-4de0-9802-6d6d0bc42b02",
+      "comment": "Remove iPad from cart",
+      "command": "click",
+      "target": "css=form.adjustform.remove > input[name=\"submit\"]",
+      "targets": [
+        ["css=form.adjustform.remove > input[name=\"submit\"]", "css"],
+        ["css=.wpsc_product_remove_0 input:nth-child(4)", "css:finder"],
+        ["xpath=(//input[@name='submit'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='checkout_page_container']/div/table/tbody/tr[2]/td[6]/form/input[4]", "xpath:idRelative"],
+        ["xpath=//td[6]/form/input[4]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7d2bbe15-6b33-470b-b032-ace4677ea071",
+      "comment": "Remove iPod from cart",
+      "command": "click",
+      "target": "css=form.adjustform.remove > input[name=\"submit\"]",
+      "targets": [
+        ["css=form.adjustform.remove > input[name=\"submit\"]", "css"],
+        ["css=.remove > input:nth-child(4)", "css:finder"],
+        ["xpath=(//input[@name='submit'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='checkout_page_container']/div/table/tbody/tr[2]/td[6]/form/input[4]", "xpath:idRelative"],
+        ["xpath=//td[6]/form/input[4]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "08bae3cb-ce72-4c54-b9c3-a8243acc42f2",
+      "comment": "Verify that \"Oops, there is nothing in your cart.\" is displayed when cart is empty",
+      "command": "verifyText",
+      "target": "css=div.entry-content",
+      "targets": [
+        ["css=div.entry-content", "css"],
+        ["css=.entry-content", "css:finder"],
+        ["xpath=//article[@id='post-29']/div", "xpath:idRelative"],
+        ["xpath=//article/div", "xpath:position"]
+      ],
+      "value": "Oops, there is nothing in your cart."
+    }, {
+      "id": "8979b31f-07e4-4887-ae85-063e0b426882",
+      "comment": "Close the browser window",
+      "command": "close",
+      "target": "win_ser_local",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "f25a147f-a778-409c-a5ec-e5b3ad32e5ed",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["abd41834-04e6-46d3-81e3-41c6ed47dc3b"]
+  }],
+  "urls": ["http://store.demoqa.com/"],
+  "plugins": []
+}
